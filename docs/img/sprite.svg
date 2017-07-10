@@ -13,7 +13,7 @@
 
   <symbol id="calendar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M39 3h-2V0h-3v3H13V0h-3v3h-.1C5.5 3 1 6.9 1 11.3v29C1 44.8 5.5 48 9.9 48h29c4.4 0 7-3.2 7-7.6v-29C46 6.9 43.3 3 39 3zM11 45H9.9C7.1 45 5 43.2 5 40.4V39h6v6zm0-9H5v-6h6v6zm0-9H5v-6h6v6zm11 18h-9v-6h9v6zm0-9h-9v-6h9v6zm0-9h-9v-6h9v6zm12 18h-9v-6h9v6zm0-9h-9v-6h9v6zm0-9h-9v-6h9v6zm10 13.4c0 2.7-2.3 4.6-5 4.6h-1v-6h6v1.4zm0-4.4h-6v-6h6v6zm0-9h-6v-6h6v6zm-1-9H4v-6.7C4 8.6 7.1 6 9.9 6h.1v6h3V6h21v6h3V6h2c2.7 0 4 2.6 4 5.3V18z"/></symbol>
 
-
+  <symbol id="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 3c0-.6-.4-1-1-1H1c-.6 0-1 .4-1 1v2c0 .6.4 1 1 1h22c.6 0 1-.4 1-1V3zM24 11c0-.6-.4-1-1-1H1c-.6 0-1 .4-1 1v2c0 .6.4 1 1 1h22c.6 0 1-.4 1-1v-2zM24 19c0-.6-.4-1-1-1H1c-.6 0-1 .4-1 1v2c0 .6.4 1 1 1h22c.6 0 1-.4 1-1v-2z"/></symbol>
 
 
 </svg>

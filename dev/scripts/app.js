@@ -132,7 +132,8 @@ jQuery(document).ready(function($) {
 	});
 
 $(".toogle-menu").on('click', function() {
-  $(this).parent('.navbar-menu').find('ul').slideToggle(120);
+  $(this).toggleClass('opened');
+  $('.navbar-menu').find('ul').slideToggle(120);
 });
 
 
