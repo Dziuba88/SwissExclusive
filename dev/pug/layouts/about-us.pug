@@ -1,0 +1,40 @@
+block vars
+include ../inc/mixin
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="initial-scale=1.0, user-scalable=no")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title «Exclusive Swiss» | #{active__menu}
+    link(rel="shortcut icon" type="image/x-icon" href="/favicon.ico")
+    link(rel="icon" type="image/png" href="img/favicon.png")
+
+    //styles
+    link(href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500&amp;subset=cyrillic" rel="stylesheet")
+    link(href="css/template.min.css", rel="stylesheet")
+
+  body(class=page__class)
+    #preloader
+    block content
+    // FOOTER
+    footer.footer
+      .container  
+        .row.bottom
+          .col.sm-8
+            .footer_contacts
+              a(href="mailto:centurymedicalny@gmail.com") info@exclusiveswiss.com
+              a(href="tel:+41 79 129 22 39") +41 79 129 22 39
+              a(href="https://www.facebook.com/" target="_blank")
+                svg: use(xlink:href="#facebook")
+                span Facebook
+            .footer_copyrights
+              span © «Exclusive Swiss», 2017 
+              span |  
+              span.footer_adress Mittlere strasse 24 , 4056 Basel
+          .col.sm-4.footer__develop Development — 
+                a(href="http://www.meta.md" target="_blank") www.meta.md
+    // SCRIPTS
+    script(src="js/main.min.js")
+    script(src="js/app.min.js")
+    

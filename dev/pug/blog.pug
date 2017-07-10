@@ -1,0 +1,89 @@
+extends layouts/default
+block vars
+  - active__menu = 'Новости'
+  - page__class = 'blog'
+block content
+  // HEADER
+  include inc/header-default
+  // PAGE CONTENT
+  section.blog-list
+    .container
+      .block-header: h2 Новости
+      .blog-list_item
+        .row
+          .col.sm-4.blog-list_item-image
+            img(src="img/offers-1.jpg", alt="")
+            a(href="#").blog-list_item-image_redmore
+          .col.sm-8: .blog-list_item-text
+              .blog-list_item-date
+                svg: use(xlink:href="#calendar")
+                time 14.02.2017
+              .blog-list_item-title
+                h3  Показательный пример
+              .blog-list_item-intro
+                p Взрыв, как можно показать с помощью не совсем тривиальных вычислений, представляет собой гидродинамический удар. В литературе неоднократно описано, как легато продолжает октавер.
+      .blog-list_item
+        .row.stretch
+          .col.sm-4.blog-list_item-image
+            img(src="img/offers-2.jpg", alt="")
+            a(href="#").blog-list_item-image_redmore
+          .col.sm-8: .blog-list_item-text
+              .blog-list_item-date
+                svg: use(xlink:href="#calendar")
+                time 14.02.2017
+              .blog-list_item-title
+                h3  Процессуальное изменение
+              .blog-list_item-intro
+                p Взрыв, как можно показать с помощью не совсем тривиальных вычислений, представляет собой гидродинамический удар. В литературе неоднократно описано, как легато продолжает октавер.
+      .blog-list_item
+        .row.stretch
+          .col.sm-4.blog-list_item-image
+            img(src="img/offers-3.jpg", alt="")
+            a(href="#").blog-list_item-image_redmore
+          .col.sm-8: .blog-list_item-text
+              .blog-list_item-date
+                svg: use(xlink:href="#calendar")
+                time 14.02.2017
+              .blog-list_item-title
+                h3  Явление культурологического порядка
+              .blog-list_item-intro
+                p Взрыв, как можно показать с помощью не совсем тривиальных вычислений, представляет собой гидродинамический удар. В литературе неоднократно описано, как легато продолжает октавер.
+      .blog-list_item
+        .row.stretch
+          .col.sm-4.blog-list_item-image
+            img(src="img/offers-4.jpg", alt="")
+            a(href="#").blog-list_item-image_redmore
+          .col.sm-8: .blog-list_item-text
+              .blog-list_item-date
+                svg: use(xlink:href="#calendar")
+                time 14.02.2017
+              .blog-list_item-title
+                h3  Форшлаг
+              .blog-list_item-intro
+                p Взрыв, как можно показать с помощью не совсем тривиальных вычислений, представляет собой гидродинамический удар. В литературе неоднократно описано, как легато продолжает октавер.
+      .blog-list_item
+        .row.stretch
+          .col.sm-4.blog-list_item-image
+            img(src="img/offers-5.jpg", alt="")
+            a(href="#").blog-list_item-image_redmore
+          .col.sm-8: .blog-list_item-text
+              .blog-list_item-date
+                svg: use(xlink:href="#calendar")
+                time 14.02.2017
+              .blog-list_item-title
+                h3  Нонаккорд использует осциллятор
+              .blog-list_item-intro
+                p Взрыв, как можно показать с помощью не совсем тривиальных вычислений, представляет собой гидродинамический удар. В литературе неоднократно описано, как легато продолжает октавер.
+      .blog-list_item
+        .row.stretch
+          .col.sm-4.blog-list_item-image
+            img(src="img/offers-6.jpg", alt="")
+            a(href="#").blog-list_item-image_redmore
+          .col.sm-8: .blog-list_item-text
+              .blog-list_item-date
+                svg: use(xlink:href="#calendar")
+                time 14.02.2017
+              .blog-list_item-title
+                h3  Глиссандирующая ритмоформула скалярна
+              .blog-list_item-intro
+                p Взрыв, как можно показать с помощью не совсем тривиальных вычислений, представляет собой гидродинамический удар. В литературе неоднократно описано, как легато продолжает октавер.

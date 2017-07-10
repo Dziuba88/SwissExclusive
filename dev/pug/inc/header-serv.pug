@@ -1,0 +1,36 @@
+header.header.header-styled
+  .header-styled_article
+    .owl-carousel.default-slider
+      .item: img.item-image(src="img/fp-slide-1.jpg", alt="")
+      .item: img.item-image(src="img/fp-slide-2.jpg", alt="")
+      .item: img.item-image(src="img/fp-slide-3.jpg", alt="")
+    .title: .container: h1=active__menu
+  .header-styled_top
+    .container
+      .navbar
+        .navbar-header
+          .row.middle
+            .col.md-4.sm-5: a(href="./").navbar-brand: img(src="img/logo.png", alt="")
+            .col.md-8.sm-7.text-right
+              .navbar-header_buttons
+                a(href="tel:+41791292239").call-us
+                  svg: use(xlink:href="#phone")
+                  span +41 79 129 22 39 
+                a(href="search.html").btn-search
+                  svg: use(xlink:href="#search")
+                  span Поиск
+                span.dropdown
+                  a(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false").btn-lang
+                    span Ру
+                    svg: use(xlink:href="#caret")
+                  ul.dropdown-menu
+                    li.active: a(href="#") Ру
+                    li: a(href="#") En
+        nav.navbar-menu
+          button.toogle-menu меню
+          ul
+            +item('О нас', 'about.html', '')
+            +item('Услуги', 'services.html')
+            +item('Новости', 'blog.html')
+            +item('Аренда', 'rent.html')
+            +item('Контакты', 'contacts.html')

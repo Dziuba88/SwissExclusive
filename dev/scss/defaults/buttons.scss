@@ -1,0 +1,47 @@
+.btn-red_ribbon {
+  display: inline-block;
+  background-color: $primary-color;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 10px 40px;
+  border-radius: 3px;
+  transition: $animation-fast;
+  border: none;
+  cursor: pointer;
+
+  @media #{$mobile-screen} {font-size: 14px;}
+
+  svg {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    fill: #fff;
+
+    &:last-child {
+      margin-left: .5em;
+    }
+    &:first-child {
+      margin-right: .5em;
+    }
+  }
+
+  &:focus, &:active {
+    color: #fff;
+    background-color: $primary-color
+  }
+  &:hover {
+    color: #fff;
+    background-color: $primary-hover
+  }
+
+  &.block {
+    display: block;
+    width: 100%;
+  }
+}

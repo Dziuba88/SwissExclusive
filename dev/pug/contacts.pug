@@ -1,0 +1,36 @@
+extends layouts/default
+block vars
+  - active__menu = 'Контакты'
+  - page__class = 'contacts'
+block content
+  // HEADER
+  include inc/header-default
+  // PAGE CONTENT
+  .container
+    .block-header: h2 Контактная информация
+    .contacts-content
+      #map
+      .contacts-content_body
+        .row
+          .col.sm-6.contact__text
+            h3 «Swiss Exclusive Services» GMBH
+            p Reg nr CH- 270.4.004.113-7<br>Mittlere strasse 24 , 4056 Basel 
+            p: a(href="tel:+41791292239")
+              svg: use(xlink:href="#phone")
+              span +41 79 129 22 39
+            p: a(href="mailto:info@exclusiveswiss.com")
+              svg: use(xlink:href="#mail")
+              span info@exclusiveswiss.com          
+          .col.sm-6.contact__form
+            form(action="" method="post")
+              .contact__form-input
+                label(for="contact_name") Имя
+                input(type="text" name="name" id="contact_name" required)
+              .contact__form-input
+                label(for="contact_mail") E-mail
+                input(type="email" name="email" id="contact_mail" required)
+              .contact__form-message
+                textarea(name="message" cols="30" rows="10" id="contact_message" placeholder="Сообщение" required)
+              .contact__form-controls
+                input(type="hidden" name="subject" value="Новое сообщение")
+                button(type="submit").btn-red_ribbon.block Отправить

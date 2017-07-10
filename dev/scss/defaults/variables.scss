@@ -1,0 +1,52 @@
+//== Media Query Ranges
+$sm-screen: 640px !default;
+$md-screen: 940px !default;
+
+//== MEDIA BREAKPOINTS
+$mobile-screen: "only screen and (max-width : #{$sm-screen - 1})" !default;
+$tablet-screen: "only screen and (min-width : #{$sm-screen})" !default;
+$normal-screen: "only screen and (min-width : #{$md-screen})" !default;
+$tablet-down:   "only screen and (max-width : #{$md-screen - 1})" !default;
+
+
+//== Grid
+$num-cols: 12 !default;
+$gutter-width: 30px !default;
+
+//== Colors
+$base-color:        #717171 !default;
+$primary-color:     #e40045 !default;
+$primary-hover:     #ea506c !default;
+$secondary-color:   #3c91e6 !default;
+$accent-color:      #4cb944 !default;
+
+//== Effects
+$shadow-z-1:        0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24) !default;
+$base-transition:   all .35s ease-in-out !default;
+//== Typography
+$base-font:             'Roboto', sans-serif !default;
+$base-font-size:        14px !default;
+$base-font_weight:      400 !default;
+$base-font_ratio:       1.25 !default; //example: 1.618 = Golden Ratio
+
+$headings-font:         'Roboto Condensed', sans-serif !default;
+$headings-line-height:  1.2 !default;
+$headings-font-weight:  500 !default;
+
+
+
+
+// Basics of a navbar
+$navbar-height:           50px !default;
+$navbar-line-height:      30px !default;
+$navbar-font:             13px !default;
+$navbar-background:       #000 !default;
+$grid-float-normal: "only screen and (min-width : #{$md-screen})" !default;
+$grid-float: "only screen and (max-width : #{$md-screen - 1})" !default;
+
+
+// Basics transitions
+$animation-default:        all .5s cubic-bezier(0.4, 0.0, 0.2, 1) !default;
+$animation-fast:        all .25s cubic-bezier(0.4, 0.0, 0.2, 1) !default;
+$animation-slow:        all .75s cubic-bezier(0.4, 0.0, 0.2, 1) !default;
+

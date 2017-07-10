@@ -1,0 +1,42 @@
+.article-body {
+  background-color: #fff;
+  margin-bottom: 60px;
+
+  &_text {
+    padding: 0 80px 40px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 27px;
+      margin: 0 0 27px;
+      color: #666;
+    }
+  }
+}
+@media #{$tablet-down} {
+  .article-body_text {
+      padding: 0 30px 10px;
+
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+}

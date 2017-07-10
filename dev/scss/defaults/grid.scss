@@ -1,0 +1,113 @@
+// Grid Layout
+.container {
+  margin: 0 auto;
+  padding: 0 ($gutter-width / 2);
+  width: 100%;
+
+
+  &.flexed {
+    width: 100% !important;
+  }
+
+  @media #{$normal-screen} {width: $md-screen;}
+
+
+}
+
+.row {
+  margin-left: ($gutter-width / -2);
+  margin-right: ($gutter-width / -2);
+  display: flex;
+  flex-wrap: wrap;
+  
+  &.column {flex-direction: column;}
+  &.start {justify-content: flex-start;}
+  &.center {justify-content: center;}
+  &.around {justify-content: space-around;}
+  &.between {justify-content: space-between;}
+  &.end {justify-content: flex-end;}
+  &.top {align-items: flex-start;}
+  &.middle {align-items: center;}
+  &.bottom {align-items: flex-end;}
+  &.stretch {align-items: stretch;}
+}
+
+.col {
+  padding: 0 ($gutter-width / 2);
+  margin: 0;
+  position: relative;
+  flex-basis:100%;
+  max-width: 100%;
+  -ms-flex-preferred-size: 100%;
+
+  $i: 1;
+  @while $i <= $num-cols {
+    $perc: unquote((100 / ($num-cols / $i)) + "%");
+    &.xs-#{$i} {
+      flex-basis: $perc;
+      max-width: $perc;
+      -ms-flex-preferred-size: $perc;
+    }
+    $i: $i + 1;
+  }
+  $i: 1;
+  @while $i <= $num-cols {
+    &.order-xs-#{$i} {order:$i;}
+    $i: $i + 1;
+  }
+  $i: 1;
+  @while $i <= $num-cols {
+    $perc: unquote((100 / ($num-cols / $i)) + "%");
+    &.offset-xs-#{$i} {margin-left: $perc;}
+    $i: $i + 1;
+  }
+
+  /*** TABLET and UP ***/
+  @media #{$tablet-screen} {
+    $i: 1;
+    @while $i <= $num-cols {
+      $perc: unquote((100 / ($num-cols / $i)) + "%");
+      &.sm-#{$i} {
+        flex-basis: $perc;
+        max-width: $perc;
+        -ms-flex-preferred-size: $perc;
+      }
+      $i: $i + 1
+    }
+    $i: 1;
+    @while $i <= $num-cols {
+      &.order-sm-#{$i} {order:$i;}
+      $i: $i + 1;
+    }
+    $i: 1;
+    @while $i <= $num-cols {
+      $perc: unquote((100 / ($num-cols / $i)) + "%");
+      &.offset-sm-#{$i} {margin-left: $perc;}
+      $i: $i + 1;
+    }
+  }
+  /*** NORMAL and UP ***/
+  @media #{$normal-screen} {
+    $i: 1;
+    @while $i <= $num-cols {
+      $perc: unquote((100 / ($num-cols / $i)) + "%");
+      &.md-#{$i} {
+        flex-basis: $perc;
+        max-width: $perc;
+        -ms-flex-preferred-size: $perc;
+      }
+      $i: $i + 1;
+    }
+    $i: 1;
+    @while $i <= $num-cols {
+      &.order-md-#{$i} {order:$i;}
+      $i: $i + 1;
+    }
+    $i: 1;
+    @while $i <= $num-cols {
+      $perc: unquote((100 / ($num-cols / $i)) + "%");
+      &.offset-md-#{$i} {margin-left: $perc;}
+      $i: $i + 1;
+    }
+  }
+}

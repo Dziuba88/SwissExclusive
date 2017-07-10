@@ -1,0 +1,54 @@
+extends layouts/default
+block vars
+  - active__menu = 'Аренда'
+  - page__class = 'rent-page'
+block content
+  // HEADER
+  include inc/header-default
+  // PAGE CONTENT
+  .rent-article
+    .container
+      .row
+        .col.sm-5.rent-article__gallery
+          .rent-article__gallery-wraper
+            .sidebar-slider
+              .owl-carousel.rent-slider
+                div: a.image-link(href="img/offers-1.jpg")
+                  img(src="img/offers-1.jpg", alt="")
+                  span.image-link_overlay
+                div: a.image-link(href="img/offers-2.jpg")
+                  img(src="img/offers-2.jpg", alt="")
+                  span.image-link_overlay
+                div: a.image-link(href="img/offers-3.jpg")
+                  img(src="img/offers-3.jpg", alt="")
+                  span.image-link_overlay
+                div: a.image-link(href="img/offers-4.jpg")
+                  img(src="img/offers-4.jpg", alt="")
+                  span.image-link_overlay
+        .col.sm-7.rent-article__text
+          h1 An immense, exquisitely appointed estate with a strong focus on leisure and relaxation
+          p Взрыв, как можно показать с помощью не совсем тривиальных вычислений, представляет собой гидродинамический удар. В литературе неоднократно описано, как легато продолжает октавер.
+          p Взрыв, как можно показать с помощью не совсем тривиальных вычислений, представляет собой гидродинамический удар. В литературе неоднократно описано, как легато продолжает октавер.
+          p Взрыв, как можно показать с помощью не совсем тривиальных вычислений, представляет собой гидродинамический удар. В литературе неоднократно описано, как легато продолжает октавер.
+          .rent-article__footer
+            a(href="#order-form").btn-red_ribbon.form-modal Отправить запрос
+
+            form#order-form.popup-form.mfp-hide
+              h2 An immense, exquisitely appointed estate with a strong focus on leisure and relaxation
+              fieldset.contact__form
+                .contact__form-input
+                  label(for="contact_name") Имя
+                  input(type="text" name="name" id="contact_name" required)
+                .contact__form-input
+                  label(for="contact_mail") E-mail
+                  input(type="email" name="email" id="contact_mail" required)
+                .contact__form-input
+                  label(for="contact_tel") Телефон
+                  input(type="tel" name="tel" id="contact_tel" required)
+                .contact__form-message
+                  textarea(name="message" cols="30" rows="10" id="contact_message" placeholder="Сообщение" required)
+                .contact__form-controls
+                  input(type="hidden" name="subject" value="Новая заявка")
+                  button(type="submit").btn-red_ribbon.block Отправить
+
+
