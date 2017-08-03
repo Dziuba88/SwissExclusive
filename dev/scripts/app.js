@@ -129,12 +129,17 @@ jQuery(document).ready(function($) {
 				}
 			}
 		}
-	});
+  });
+  
+  $(document).on('click', '.mfp-close', function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+  });
 
-$(".toogle-menu").on('click', function() {
-  $(this).toggleClass('opened');
-  $('.navbar-menu').find('ul').slideToggle(120);
-});
+  $(".toogle-menu").on('click', function() {
+    $(this).toggleClass('opened');
+    $('.navbar-menu').find('ul').slideToggle(120);
+  });
 
 
 
